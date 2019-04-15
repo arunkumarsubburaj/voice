@@ -1,0 +1,68 @@
+div#container {
+    width: 100%;
+    height: 100%;
+    background: rgb(226, 216, 216);
+}
+
+html,
+body {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    position: relative;
+}
+
+div#voiceEle {
+    width: 50px;
+    height: 50px;
+    background: #0017ff;
+    border-radius: 50%;
+    text-align: center;
+    position: absolute;
+    bottom: 45px;
+    right: 45px;
+    cursor: pointer;
+    transition: 350ms;
+    user-select: none;
+}
+
+#voiceEle.hover {
+    cursor: pointer;
+    width: 75px;
+    height: 75px;
+}
+
+i.material-icons.mic {
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    transition: 350ms;
+}
+
+#voiceEle.hover i.material-icons.mic {
+    line-height: 75px;
+    font-size: 45px;
+}
+
+div#result {
+    padding: 15px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #aaa;
+    /* white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden; */
+}
+
+div#RecResult {
+    text-align: center;
+    font-size: 25px;
+    color: #00f;
+    font-weight: bold;
+}
